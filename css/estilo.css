@@ -25,6 +25,14 @@ a{
 a:hover{
     text-decoration: underline;
 } */
+ .root{
+    --verde: rgb(141, 191, 65);
+ }
+
 .navbar{
     background-color: rgb(141, 191, 65);
+}
+.navbar a{
+    font-weight: 500;
+    font-size: 1.3rem;
 }
