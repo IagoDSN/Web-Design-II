@@ -25,3 +25,6 @@ a{
 a:hover{
     text-decoration: underline;
 } */
+.navbar{
+    background-color: rgb(141, 191, 65);
+}
