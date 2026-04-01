@@ -30,3 +30,17 @@
     background-color: var(--cinza);
     color: var(--branco);
 }
+
+.boasvindas{
+    background-image: url('../imagens/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    text-shadow: 1px 1px 2px var(--branco);
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
+
+/* .container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+} */
