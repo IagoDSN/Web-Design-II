@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,11 +13,32 @@
     <script src="js/bootstrap.bundle.js"></script>
 
     <style>
-        div{background-color: blue;}
-        .fonte{font-size: 1.5rem;}
-        body{font-size: 14px;}
+        div {
+            background-color: white;
+        }
+
+        .fonte {
+            font-size: 1.5rem;
+        }
+
+        body {
+            font-size: 14px;
+        }
+
+        .box1 {
+            background-color: purple;
+        }
+
+        .box2 {
+            background-color: green;
+        }
+
+        .box3 {
+            background-color: gold;
+        }
     </style>
 </head>
+
 <body>
     <h1>Hello world!</h1>
 
@@ -28,6 +50,57 @@
 
     <p>testando tamanho do font-size</p>
     <p class="fonte">testando tamanho do font-size</p>
-   
+
+    <div class="py-3"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col box1">coluna 1</div>
+            <div class="col box2">coluna 2</div>
+            <div class="col box3">coluna 3</div>
+        </div>
+    </div>
+
+    <div class="py-3"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-2 box1">coluna 1</div>
+            <div class="col-7 box2">coluna 2</div>
+            <div class="col-3 box3">coluna 3</div>
+        </div>
+    </div>
+
+    <div class="py-3"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 box1">coluna 1</div>
+            <div class="col-lg-7 box2">coluna 2</div>
+            <div class="col-lg-3 box3">coluna 3</div>
+        </div>
+    </div>
+
+    <div class="py-3"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-4 box1">coluna 1</div>
+            <div class="col-lg-7 col-md-4 box2">coluna 2</div>
+            <div class="col-lg-3 col-md-4 box3">coluna 3</div>
+        </div>
+    </div>
+
+    <div class="py-3"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-4 box1">coluna 1</div>
+            <div class="col-lg-9 col-md-4 box2">coluna 2</div>
+            <div class="col-lg-3 col-md-4 box3">coluna 3</div>
+        </div>
+    </div>
+
 </body>
+
 </html>
