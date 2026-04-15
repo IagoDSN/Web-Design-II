@@ -1,25 +1,20 @@
- :root{
-    --verde: rgb(141, 191, 65);
-    --cinza: rgb(49, 53, 61);
+:root{
+    --verde:rgb(141,191,65);
+    --cinza: rgb(49,53,61);
     --branco: rgb(255,255,255);
- }
+}
 
 .navbar{
     background-color: var(--verde);
 }
+
 .navbar a{
     font-weight: 500;
     font-size: 1.3rem;
 }
 
-.navbar-toggler{
-    border: none;
-    font-size: 1.5rem;
-    color: #fff;
-}
-.navbar-toggler:focus{
-    box-shadow: none;
-}
+.navbar-toggler{border: none; font-size: 1.5rem;}
+.navbar-toggler:focus{box-shadow: none;}
 
 .dropdown-menu{
     background-color: var(--verde);
@@ -31,11 +26,14 @@
     color: var(--branco);
 }
 
+/* start boasvindas */
 .boasvindas{
-    background-image: url('../imagens/banner.jpg');
+    background-image: url(../imagens/banner.jpg);
     background-size: cover;
     background-position: center;
     text-shadow: 1px 1px 2px var(--branco);
+    /* padding-left: -0.75rem;
+    padding-right: -0.75rem; */
     margin-left: -0.75rem;
     margin-right: -0.75rem;
 }
