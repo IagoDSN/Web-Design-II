@@ -42,3 +42,9 @@
     padding-left: 0;
     padding-right: 0;
 } */
+
+.service{
+    border-top: 1em solid var(--cinza);
+    border-bottom: 1em solid var(--cinza);
+    background-color: rgb(160, 159, 159);
+}
