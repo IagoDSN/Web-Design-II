@@ -57,3 +57,10 @@
 .carousel .img-fluid{
     width: 100%;
 }
+
+@media (max-width: 576px){
+    .carousel .img-fluid{
+        height: 40vh;
+        
+    }
+}
