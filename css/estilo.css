@@ -48,3 +48,12 @@
     border-bottom: 1em solid var(--cinza);
     background-color: rgb(160, 159, 159);
 }
+
+.carousel{    
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
+
+.carousel .img-fluid{
+    width: 100%;
+}
