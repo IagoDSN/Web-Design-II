@@ -1,66 +1,114 @@
 :root{
-    --verde:rgb(141,191,65);
-    --cinza: rgb(49,53,61);
-    --branco: rgb(255,255,255);
+--verde:rgb(141,191,65);
+--cinza: rgb(49,53,61);
+--branco: rgb(255,255,255);
 }
 
+body{
+
+}
+
+header{
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
 .navbar{
-    background-color: var(--verde);
+background-color: var(--verde);
 }
 
 .navbar a{
-    font-weight: 500;
-    font-size: 1.3rem;
+font-weight: 500;
+font-size: 1.3rem;
 }
 
 .navbar-toggler{border: none; font-size: 1.5rem;}
 .navbar-toggler:focus{box-shadow: none;}
 
 .dropdown-menu{
-    background-color: var(--verde);
-    border: none;
+background-color: var(--verde);
+border: none;
 }
 
 .dropdown-item:hover{
-    background-color: var(--cinza);
-    color: var(--branco);
+background-color: var(--cinza);
+color: var(--branco);
 }
 
 /* start boasvindas */
 .boasvindas{
-    background-image: url(../imagens/banner.jpg);
-    background-size: cover;
-    background-position: center;
-    text-shadow: 1px 1px 2px var(--branco);
-    /* padding-left: -0.75rem;
-    padding-right: -0.75rem; */
-    margin-left: -0.75rem;
-    margin-right: -0.75rem;
+background-image: url(../imagens/banner.jpg);
+background-size: cover;
+background-position: center;
+text-shadow: 1px 1px 2px var(--branco);
+/* padding-left: -0.75rem;
+padding-right: -0.75rem; */
+margin-left: -0.75rem;
+margin-right: -0.75rem;
 }
 
 /* .container-fluid{
-    padding-left: 0;
-    padding-right: 0;
+padding-left: 0;
+padding-right: 0;
 } */
 
 .service{
-    border-top: 1em solid var(--cinza);
-    border-bottom: 1em solid var(--cinza);
-    background-color: rgb(160, 159, 159);
+border-top: 1rem solid var(--cinza);
+border-bottom: 1rem solid var(--cinza);
+background-color: rgb(187, 187, 187);
 }
 
-.carousel{    
-    margin-left: -0.75rem;
-    margin-right: -0.75rem;
+.carousel{
+margin-left: -0.75rem;
+margin-right: -0.75rem;
 }
 
 .carousel .img-fluid{
-    width: 100%;
+width: 100%;
+}
+.carousel-caption{
+font-size: 1.75rem;
 }
 
-@media (max-width: 576px){
-    .carousel .img-fluid{
-        height: 40vh;
-        
+.carousel-caption p{
+font-size: 1.5rem;
+}
+
+.carousel-indicators [data-bs-target]{
+width: 1rem;
+height: 1rem;
+border-radius: 50%;
+}
+
+@media (width: 576px){
+.carousel-caption{
+padding-top: 0.5rem;
+padding-bottom: 0.5rem;
+}
+.carousel-caption p, .carousel-caption a{
+font-size: 0.75rem;
+margin-bottom: 0.25rem;
+}
+}
+
+.voltar{
+    background-color: transparent;
+    border: 2px solid var(--verde);
+    color: var(--verde);
+    border-radius: 10px;
+    padding: 10px 5px;
+    font-size: 20px;
+    position: fixed;
+    right: 1%;
+    bottom: 1%;
+    opacity: 0.5;
+    transition: 0.4s;
+}
+.voltar:hover{
+    opacity: 0.8;
+}
+
+@media (max-width: 1200px){
+    .voltar{
+        opacity: 1;
     }
 }
