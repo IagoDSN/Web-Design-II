@@ -1,114 +1,121 @@
 :root{
---verde:rgb(141,191,65);
---cinza: rgb(49,53,61);
---branco: rgb(255,255,255);
-}
-
-body{
-
+    --verde:rgb(141,191,65);
+    --cinza: rgb(49,53,61);
+    --branco: rgb(255,255,255);
 }
 
 header{
     margin-left: -0.75rem;
     margin-right: -0.75rem;
 }
+
 .navbar{
-background-color: var(--verde);
+    background-color: var(--verde);
 }
 
 .navbar a{
-font-weight: 500;
-font-size: 1.3rem;
+    font-weight: 500;
+    font-size: 1.3rem;
 }
 
 .navbar-toggler{border: none; font-size: 1.5rem;}
 .navbar-toggler:focus{box-shadow: none;}
 
 .dropdown-menu{
-background-color: var(--verde);
-border: none;
+    background-color: var(--verde);
+    border: none;
 }
 
 .dropdown-item:hover{
-background-color: var(--cinza);
-color: var(--branco);
+    background-color: var(--cinza);
+    color: var(--branco);
 }
 
 /* start boasvindas */
 .boasvindas{
-background-image: url(../imagens/banner.jpg);
-background-size: cover;
-background-position: center;
-text-shadow: 1px 1px 2px var(--branco);
-/* padding-left: -0.75rem;
-padding-right: -0.75rem; */
-margin-left: -0.75rem;
-margin-right: -0.75rem;
+    background-image: url(../imagens/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    text-shadow: 1px 1px 2px var(--branco);
+    /* padding-left: -0.75rem;
+    padding-right: -0.75rem; */
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
 }
 
 /* .container-fluid{
-padding-left: 0;
-padding-right: 0;
+    padding-left: 0;
+    padding-right: 0;
 } */
 
 .service{
-border-top: 1rem solid var(--cinza);
-border-bottom: 1rem solid var(--cinza);
-background-color: rgb(187, 187, 187);
+    border-top: 1rem solid var(--cinza);
+    border-bottom: 1rem solid var(--cinza);
+    background-color: rgb(224,224,224);
 }
 
 .carousel{
-margin-left: -0.75rem;
-margin-right: -0.75rem;
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
 }
 
 .carousel .img-fluid{
-width: 100%;
+    width: 100%;
 }
+
 .carousel-caption{
-font-size: 1.75rem;
+    bottom: 1.75rem;
 }
 
 .carousel-caption p{
-font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .carousel-indicators [data-bs-target]{
-width: 1rem;
-height: 1rem;
-border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
 }
 
-@media (width: 576px){
-.carousel-caption{
-padding-top: 0.5rem;
-padding-bottom: 0.5rem;
-}
-.carousel-caption p, .carousel-caption a{
-font-size: 0.75rem;
-margin-bottom: 0.25rem;
-}
-}
-
-.voltar{
-    background-color: transparent;
-    border: 2px solid var(--verde);
-    color: var(--verde);
-    border-radius: 10px;
-    padding: 10px 5px;
-    font-size: 20px;
+.seta{
     position: fixed;
-    right: 1%;
-    bottom: 1%;
-    opacity: 0.5;
-    transition: 0.4s;
+    right: 1.2rem;
+    bottom: 1.2rem;
+    border: 1px solid var(--branco);
+    border-radius: 0.6rem;
+    padding: 0.6rem;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 20px;
+    color: var(--branco);
+    transition: 0.5s;
+    z-index: 9999;
 }
-.voltar:hover{
-    opacity: 0.8;
+
+.seta:hover{
+    opacity: 0.9;
+}
+
+@media (max-width: 576px){
+    .carousel-caption{
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+    }
+    .carousel-caption p, .carousel-caption .btn{
+        font-size: 0.75rem;
+        margin-bottom: 0.25rem;
+    }
 }
 
 @media (max-width: 1200px){
     .voltar{
         opacity: 1;
     }
+}
+
+.fatiadores{
+    background-image: url(../imagens/fatiador-bg.png);
+    background-size: cover;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+    background-position: center;
 }

@@ -15,6 +15,10 @@
 
 	<!-- JS -->
 	<script src="js/bootstrap.bundle.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+		integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/backtotop.js"></script>
 
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
@@ -22,6 +26,7 @@
 
 <body>
 	<div class="container-fluid">
+		<div id="home"></div>
 		<!-- start header -->
 		<header>
 			<nav class="navbar navbar-expand-md px-4">
@@ -56,7 +61,7 @@
 		</header>
 
 		<!-- start boasvindas -->
-		<section class="mt-5 p-5 text-center boasvindas">
+		<section class="p-5 text-center boasvindas">
 			<div class="my-5 py-5"></div>
 			<h2 class="py-3 text-uppercase fw-bold display-5">Transforme suas ideias em objetos 3D!</h2>
 
@@ -72,7 +77,7 @@
 		<section class="row text-center px-4 py-3 service">
 			<div class="col-lg-3 col-sm-6 position-relative pb-5">
 				<img src="imagens/icon-01.png" alt="">
-				<h4 class="py3">Impressoras FDM</h4>
+				<h4 class="py-3">Impressoras FDM</h4>
 				<p>Nunca foi tão fácil encontrar a melhor impressora 3D para você, com máquinas de todas as formas,
 					tamanhos
 					e faixas de preço, de modo que existe uma máquina ideal para cada necessidade.</p>
@@ -82,7 +87,7 @@
 
 			<div class="col-lg-3 col-sm-6 position-relative pb-5">
 				<img src="imagens/icon-02.png" alt="">
-				<h4 class="py3">Impressoras de resina</h4>
+				<h4 class="py-3">Impressoras de resina</h4>
 				<p>As impressoras 3D de resina já estão muito bem estabelecidas. Hoje em dia, hobistas domésticos,
 					makers e
 					profissionais podem escolher uma máquina compacta e de alta resolução por menos de USD $200 e fazer
@@ -93,7 +98,7 @@
 
 			<div class="col-lg-3 col-sm-6 position-relative pb-5">
 				<img src="imagens/icon-03.png" alt="">
-				<h4 class="py3">Fatiadores</h4>
+				<h4 class="py-3">Fatiadores</h4>
 				<p>Em impressão 3D, o termo “fatiamento” se refere ao processo de preparação de um modelo digital
 					tridimensional para a impressão 3D. Softwares de fatiamento, ou slicers 3D, são semelhantes a
 					softwares
@@ -104,7 +109,7 @@
 
 			<div class="col-lg-3 col-sm-6 position-relative pb-5">
 				<img src="imagens/icon-04.png" alt="">
-				<h4 class="py3">Filamentos</h4>
+				<h4 class="py-3">Filamentos</h4>
 				<p>Ter em mãos uma impressora 3D nos abre a janela para um universo de possibilidades. Seja para algo
 					mais
 					funcional, como próteses, ou algo mais recreativo, como peças de jogos de tabuleiro, há uma
@@ -116,20 +121,22 @@
 		</section>
 
 		<!-- start aplicacao -->
-		<!-- <div class="py-5" id="aplicacao"></div> -->
-		<section class="container py-3">
-			<h2 class="text-center text uppercase fw-bold pb-3">Impressão 3D e suas aplicações</h2>
+		<!-- <div class="py-5"></div> -->
+		<section class="container py-3" id="aplicacao">
+			<h2 class="text-center text-uppercase fw-bold pb-3">Impressão 3D e suas aplicações</h2>
 
 			<div class="row">
-				<div class="col-md-4 PY-3">
+				<div class="col-lg-4">
 					<img src="imagens/impressao3d.jpg" alt="" class="img-fluid rounded border border-dark">
 				</div>
 
-				<div class="col-lg-8 py-3 border border-2 rounded">
+				<div class="col-lg-8 py-3">
 					<p>A impressão 3D é um assunto que, cada vez mais, vai ocupar espaço nos noticiários e na sua
-						própria vida,
+						própria
+						vida,
 						tanto pessoal quanto profissional. Essa técnica, que parecia integrar um futuro distante há
-						poucos anos,
+						poucos
+						anos,
 						vem
 						se tornando presente na rotina de governos, empresas e até pessoas comuns.</p>
 
@@ -137,25 +144,24 @@
 						nova
 						maneira
 						de produção. Ao mesmo tempo, surgem novas oportunidades para diferentes setores, como a
-						construção civil
+						construção
+						civil
 						e a
 						medicina, que têm acesso a materiais de um jeito mais rápido e simples.</p>
 				</div>
 			</div>
-			<div class="row g-2">
 
+			<div class="row g-2">
 				<div class="col-lg-3 col-sm-6 mb-3">
 					<div class="card border-dark h-100">
 						<img src="imagens/aplicacao-01.jpg" alt="" class="card-img-top">
-
-
-						<div class="card-header border-dark bg-secondary bg-opacity-75">
+						<div class="card-header border-dark bg-secondary bg-opacity-50">
 							<h5>Medicina</h5>
 						</div>
-
 						<div class="card-body">
 							<p>No campo da medicina, pacientes já receberam próteses impressas em 3D para substituir
-								ossos de
+								ossos
+								de
 								diversas
 								partes do corpo. Materiais como plástico e titânio são utilizados para compor as peças,
 								feitas
@@ -169,18 +175,16 @@
 						</div>
 					</div>
 				</div>
-
 				<div class="col-lg-3 col-sm-6 mb-3">
 					<div class="card border-dark h-100">
 						<img src="imagens/aplicacao-02.png" alt="" class="card-img-top">
-
-						<div class="card-header border-dark bg-secondary bg-opacity-75">
+						<div class="card-header border-dark bg-secondary bg-opacity-50">
 							<h5>Indústria</h5>
 						</div>
-
 						<div class="card-body">
 							<p>Por possibilitar a fabricação de peças para uma infinidade de equipamentos, a impressão
-								3D vem
+								3D
+								vem
 								sendo
 								empregada em indústrias de diversos segmentos. Produtos inteiros ou partes já foram
 								construídas
@@ -193,22 +197,18 @@
 						</div>
 					</div>
 				</div>
-
 				<div class="col-lg-3 col-sm-6 mb-3">
 					<div class="card border-dark h-100">
 						<img src="imagens/aplicacao-03.jpg" alt="" class="card-img-top">
-
-						<div class="card-header border-dark bg-secondary bg-opacity-75">
+						<div class="card-header border-dark bg-secondary bg-opacity-50">
 							<h5>Decoração</h5>
 						</div>
-
 						<div class="card-body">
 							<p>A impressão 3D permite a fabricação de peças com formatos que não poderiam ser feitos em
 								outro
 								processo
 								de fabricação. Por isso, pode ser muito explorada na área de objetos para casa.</p>
 						</div>
-
 						<div class="card-footer border-dark bg-transparent text-center">
 							<a href="https://www.lwtsistemas.com.br/2015/12/08/decoracao-casa-objetos-impressos-3d/"
 								class="btn btn-outline-dark px-5">saiba
@@ -216,17 +216,16 @@
 						</div>
 					</div>
 				</div>
-
 				<div class="col-lg-3 col-sm-6 mb-3">
 					<div class="card border-dark h-100">
 						<img src="imagens/aplicacao-04.png" alt="" class="card-img-top">
-						<div class="card-header	border-dark bg-secondary bg-opacity-75">
+						<div class="card-header border-dark bg-secondary bg-opacity-50">
 							<h5>Presentes</h5>
 						</div>
-
 						<div class="card-body">
 							<p>A impressão 3D permite tornar reais possibilidades que antes só existiam no plano das
-								ideias. Com
+								ideias.
+								Com
 								a
 								ajuda
 								de um designer, você pode transformar sua ideia num produto exclusivo, que tenha a cara
@@ -235,7 +234,6 @@
 								que
 								você quer presentear.</p>
 						</div>
-
 						<div class="card-footer border-dark bg-transparent text-center">
 							<a href="https://www.megaminas.com.br/colunistas/entre-nos/o-futuro-dos-brindes-personalizados-como-a-tecnologia-esta-transformando-essa-industria"
 								class="btn btn-outline-dark px-5">saiba
@@ -243,7 +241,6 @@
 						</div>
 					</div>
 				</div>
-
 			</div>
 		</section>
 
@@ -256,20 +253,21 @@
 				<li data-bs-target="#slideshow" data-bs-slide-to="3"></li>
 				<li data-bs-target="#slideshow" data-bs-slide-to="4"></li>
 			</ul>
+
 			<div class="carousel-inner">
 				<figure class="carousel-item active">
 					<img src="imagens/slide-1.jpg" class="img-fluid">
 					<figcaption class="carousel-caption bg-secondary bg-opacity-75 rounded-3">
 						<p>50 coisas legais para imprimir em 3D</p>
-						<a class="btn btn-dark fw-bold px-5" href="#">Saiba mais</a>
+						<a href="#" class="btn btn-dark fw-bold px-5">Saiba mais</a>
 					</figcaption>
 				</figure>
 
-				<figure class="carousel-item">
+				<figure class="carousel-item" data-bs-interval="7500">
 					<img src="imagens/slide-2.jpg" class="img-fluid">
 					<figcaption class="carousel-caption bg-secondary bg-opacity-75 rounded-3">
 						<p>As 25 coisas mais úteis para impressão 3D com PETG</p>
-						<a class="btn btn-dark fw-bold px-5" href="#">Saiba mais</a>
+						<a href="#" class="btn btn-dark fw-bold px-5">Saiba mais</a>
 					</figcaption>
 				</figure>
 
@@ -277,7 +275,7 @@
 					<img src="imagens/slide-3.jpg" class="img-fluid">
 					<figcaption class="carousel-caption bg-secondary bg-opacity-75 rounded-3">
 						<p>Como secar filamentos 3D: PLA, ABS e Nylon</p>
-						<a class="btn btn-dark fw-bold px-5" href="#">Saiba mais</a>
+						<a href="#" class="btn btn-dark fw-bold px-5">Saiba mais</a>
 					</figcaption>
 				</figure>
 
@@ -285,7 +283,7 @@
 					<img src="imagens/slide-4.jpg" class="img-fluid">
 					<figcaption class="carousel-caption bg-secondary bg-opacity-75 rounded-3">
 						<p>Creality Ender 3 S1: melhor impressora 3D a menos de R$3000,00</p>
-						<a class="btn btn-dark fw-bold px-5" href="#">Saiba mais</a>
+						<a href="#" class="btn btn-dark fw-bold px-5">Saiba mais</a>
 					</figcaption>
 				</figure>
 
@@ -293,12 +291,12 @@
 					<img src="imagens/slide-5.jpg" class="img-fluid">
 					<figcaption class="carousel-caption bg-secondary bg-opacity-75 rounded-3">
 						<p>Cura & Ender 3 S1 (Pro): os melhores perfis e configurações</p>
-						<a class="btn btn-dark fw-bold px-5" href="#">Saiba mais</a>
+						<a href="#" class="btn btn-dark fw-bold px-5">Saiba mais</a>
 					</figcaption>
 				</figure>
 			</div>
 
-			<!-- <a href="#slideshow" class="carousel-control-prev" data-bs-slide="prev"><span class="carousel-control-prev''-icon"></span></a>
+			<!-- <a href="#slideshow" class="carousel-control-prev" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></a>
 			<a href="#slideshow" class="carousel-control-next" data-bs-slide="next"><span class="carousel-control-next-icon"></span></a> -->
 			<button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#slideshow"><span
 					class="fa-solid fa-circle-left fs-1"></span></button>
@@ -307,8 +305,8 @@
 		</section>
 
 		<!-- start impressoras -->
-		<section id="impressoras">
-			<h2>Impressoras</h2>
+		<section id="impressoras" class="container">
+			<h2 class="text-center text-uppercase fw-bold mb-4">Impressoras</h2>
 
 			<p>Nunca foi tão fácil encontrar a melhor impressora 3D para você, com máquinas de todas as formas, tamanhos
 				e
@@ -327,8 +325,8 @@
 				dispostos refletem o mercado no momento da publicação e não incluem os custos de frete e de taxas de
 				importação.</p>
 
-			b    <div>
-				<table class="table table-secondary table-hover table-bordered">
+			<div class="table-responsive">
+				<table class="table table-secondary table-hover table-bordered border-secondary">
 					<tr class="table-dark text-center fw-bold">
 						<td>Especificação</td>
 						<td>Ender 3 S1</td>
@@ -376,8 +374,8 @@
 		</section>
 
 		<!-- start fatiadores -->
-		<section>
-			<h2>Fatiadores</h2>
+		<section class="text-white p-5 fatiadores">
+			<h2 class="text-center text-uppercase fw-bold">Fatiadores</h2>
 
 			<p>O fatiador 3D é um programa que vai trabalhar como um tradutor do seu projeto para a impressora. Após
 				inserir o
@@ -432,12 +430,12 @@
 				abaixo
 				os melhores softwares de acordo com nossa equipe e descubra qual o fatiador 3D ideal para você.</p>
 
-			<ul>
-				<li>Simplify3D <span>pago</span></li>
-				<li>Cura 3D <span>gratuito</span></li>
-				<li>Slic3r <span>gratuito</span></li>
-				<li>Prusa Slicer <span>gratuito</span></li>
-				<li>ChiTu Box<span>gratuito/pago</span></li>
+			<ul class="list-group">
+				<li class="list-group-item">Simplify3D <span class="badge text-bg-danger float-end">pago</span></li>
+				<li class="list-group-item">Cura 3D <span class="badge text-bg-success float-end">gratuito</span></li>
+				<li class="list-group-item">Slic3r <span class="badge text-bg-success float-end">gratuito</span></li>
+				<li class="list-group-item">Prusa Slicer <span class="badge text-bg-success float-end">gratuito</span></li>
+				<li class="list-group-item">ChiTu Box<span class="badge text-bg-warning float-end">gratuito/pago</span></li>
 			</ul>
 		</section>
 
@@ -468,9 +466,9 @@
 
 
 			<h4>ABS</h4>
-
-			<img src="imagens/filamento-01.png" alt="">
-
+			<!-- <div class="text-center mb-4"> -->
+				<img src="imagens/filamento-01.png" alt="" class="mx-auto d-block">
+			<!-- </div> -->
 			<p>Acrinolitrina Butadieno Estireno. Este é o nome técnico para o filamento ABS. Junto com o PLA é um
 				material
 				vastamente utilizado para impressão 3D. Suas características, como a alta resistência mecânica, térmica
@@ -512,8 +510,7 @@
 				<li>temperatura da mesa: até 70°C (não é obrigatório);</li>
 				<li>elevada dureza superficial, mas quebradiço;</li>
 				<li>ideal para criação de protótipos que não sofrerão com desgaste ou teste de carga;</li>
-				<li>material mais indicado para iniciantes devida à facilidade de impressão e aceitação da maioria das
-					impressoras.</li>
+				<li>material mais indicado para iniciantes devida à facilidade de impressão e aceitação da maioria das impressoras.</li>
 			</ul>
 
 
@@ -836,7 +833,12 @@
 		</footer>
 
 		<!-- start botão voltar -->
-		<a href="#" class="voltar"><span class="fa-solid fa-up-long"></span></a>
+		<!-- <a href="#home" class="voltar"><span class="fa-solid fa-up-long"></span></a> -->
+	</div>
+
+	<!-- Start backtoTop -->
+	<div id="back-to-top" class="seta">
+		<span class="fa-solid fa-up-long"></span>
 	</div>
 </body>
 
