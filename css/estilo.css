@@ -119,3 +119,12 @@ header{
     margin-left: -0.75rem;
     background-position: center;
 }
+
+.list-group-item.active {
+background-color: #6c757d;
+}
+
+.scrollspy{
+    height: 30rem;
+    /* overflow: auto; */
+}
