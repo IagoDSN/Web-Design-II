@@ -128,3 +128,24 @@ background-color: #6c757d;
     height: 30rem;
     /* overflow: auto; */
 }
+.nav-tabs {
+border-bottom: 1px solid var(--verde);
+}
+
+.nav-tabs .nav-link:hover, .nav-tabs .nav:link:focus, .nav-tabs.nav-link.active {
+border: 1px solid var(--verde);
+}
+
+.nav-tabs .nav-link {
+color: #000;
+font-weight: bold;
+}
+
+.faq{
+    background-image: url(../imagens/faq.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+    background-attachment: fixed;
+}
